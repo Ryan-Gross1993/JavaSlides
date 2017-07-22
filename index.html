@@ -116,7 +116,7 @@
           <p> Grabs the character at the point in the String </p>
         </br>
         <code> "whispering".toUpperCase() </code> - WHISPERING
-        <p> Converts the string to all caps; vice-versa with toLowerCase() </p>
+        <p> Converts to caps; vice-versa with toLowerCase() </p>
         </div>
       </section>
 
@@ -138,7 +138,7 @@
         <div class="left-align">
         <p> Concatenating Strings Together </p>
         <pre> <code> "Hello" + "World" - "Hello World" </code> </pre>
-        </br>
+
         <p> Incremental Adding/Subtracting </p>
         <pre> <code> counter++ </code> </pre>
         <pre> <code> counter-- </code> </pre>
@@ -174,18 +174,56 @@
       </section>
 
       <section>
+        <h2> Iteration: While Loop </h2>
+        <p> Body of the loop is executed at least once. </p>
+        <p> Loop ends when the conditional is met </p>
       </section>
 
       <section>
+        <code>
+            while (condition is true) {
+              execute this code
+            }
+        </code>
       </section>
 
       <section>
+        <h2> Iteration: For Loop </h2>
+        <p> Lets you provide the control information on one line </p>
+        <code> for (int i = 0; i < 10; i++) </code>
+        <ul>
+          <li> Create the counter </li>
+          <li> Provide the conditional </li>
+          <li> Step through the counter </li>
+        </ul>
       </section>
 
       <section>
+        <code>
+          for (int i = 99; i != 0; i--) {
+            System.out.println(i + "bottles of milk on the wall" +
+            i + "bottles of milk" + "take one down, pass it around" + i - 1
+            + "bottles of milk on the wall")
+          }
+          Result: Drinking a lot of milk
+        </code>
       </section>
 
       <section>
+        <h2> Iteration: For Each </h2>
+        <p> Performs an action on all objects in a collection (Array, etc) </p>
+      </section>
+
+      <section>
+      <code>
+        String[] names = ["Joe", "Jimmy"];
+        for (String name : names) {
+          System.out.println("Hi " + name);
+        }
+      </code>
+      Result:
+      "Hi Joe"
+      "Hi Jimmy"
       </section>
 
       <section>
