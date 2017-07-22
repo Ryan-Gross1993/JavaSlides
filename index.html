@@ -1,0 +1,366 @@
+<html>
+<head>
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/moon.css" id="theme">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section>
+        <h2> Introduction Java </h2>
+        <h3> Taught By: Ryan Gross </h3>
+      </section>
+
+      <section>
+        <h2> What to Expect </h2>
+        <ul>
+          <li> Overview on the basics of the subject </li>
+          <li> Exercises to reinforce these core concepts </li>
+          <li> Recommended material for learning post-class </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2> A Bit About Myself </h2>
+        <img id="profilePicture" src="img/ProfessionalProfilePicture.jpg">
+        <ul>
+          <li> Recent graduate from Zip Code Wilmington </li>
+          <li> Graduate from University of Delaware, Winter '16 </li>
+          <li> Fun Fact: I really like to travel </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2> Today's Lesson </h2>
+        <table id="table">
+          <tr>
+            <td> 10:30-10:45: </td>
+            <td>  Introduction </td>
+          </tr>
+          <tr>
+            <td> 10:45-12:00: </td>
+            <td> Lesson </td>
+          </tr>
+          <tr>
+            <td> 12:00-12:15: </td>
+            <td> Break </td>
+          </tr>
+          <tr>
+            <td> 12:15-1:30 </td>
+            <td> Lab Exercises </td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h2> What is Java? (No, not coffee) </h2>
+        <ul>
+          <li> Object-Oriented Programming Language </li>
+          <li> One of the most popular languages </li>
+        </ul>
+      </section>
+
+      <section>
+        <img src="img/javaStatistic.jpg"/>
+      </section>
+
+      <section>
+        <h2> So..Object-Oriented Programming? </h2>
+        <ul>
+          <li>Everything is an object </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2> Number </h2>
+        <p> Numbers are broken down into: </p>
+        <ul>
+          <li> Integers: <code> int trackNumber = 10 </code> </li>
+          <li> Doubles: <code> double oneHalf = 0.5 </code> </li>
+          <li> Longs: <code> long oneQuarter = 0.25 </code> </li>
+          <li> Shorts: <code> short aNumber = 1 </code> </li>
+          <li> Floats <code> float anotherNumber = 2000.00 </code> </li>
+          <li> Bytes: <code> byte yetAnother = 50.53 </code> </li>
+        </ul>
+      </section>
+
+      <section>
+        <img src="img/primitiveDataTypes.gif"/>
+      </section>
+
+      <section>
+        <h2> Strings </h2>
+        <div class="left-align">
+          <pre> <code> "Java".length() </code> - 4 </pre>
+          <pre> <code> "Delaware".length() </code> - 8 </pre>
+          <p> strings are sequences of Unicode characters, with each character
+            represented by a unique numeric value that applies across platforms and programs. </p>
+        </div>
+      </section>
+
+      <section>
+        <h2> String Methods </h2>
+        <div class="left-align">
+          <pre> <code> "Ryan".split("") </code> </pre>
+          <p> Splits the string into an array of Strings. </p>
+          </br>
+          <pre> <code> "Wilmington".charAt(9) </code> - n </pre>
+          <p> Grabs the character at the point in the String </p>
+        </br>
+        <pre> <code> "whispering".toUpperCase() </code> - WHISPERING </pre>
+        <p> Converts the string to all caps; vice-versa with toLowerCase() </p>
+        </div>
+      </section>
+
+      <section>
+        <h2> Booleans </h2>
+        <p> True/false values </p>
+      </br>
+      <div class="left-align">
+        <ul> Boolean Operations include:
+        <li> &mp;&mp; (logical and) </li>
+        <li> || (logical or) </li>
+        <li> ! (logical not) </li>
+        </ul>
+      </div>
+      </section>
+
+      
+
+
+
+
+
+
+
+      <section>
+        <h2> About Tags </h2>
+        <p> Website content must be between HTML tags </br>
+        All elements are nested inside each other. </p>
+        <ul>
+          <li> Paragraphs in a list </li>
+          <li> A link inside a header </li>
+          <li> HTML elements inside a page body </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2> Doctype </h2>
+        <p> First thing on an HTML page </p>
+        <p> It tells us what markup language the class should use </p>
+        <code> &lt;!DOCTYPE html&gt; </code>
+      </section>
+
+      <section>
+        <h2> Head, Title, and Body Tags </h2>
+        <ul>
+          <li> Head: Where the Title Tag goes </li>
+          <li> Title: See the top of the site? </li>
+          <li> Body: Where your content goes </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2> Basic Structure of an HTML Site </h2>
+        <img src="img/SiteStructure.jpg"/>
+      </section>
+
+      <section>
+        <h2> Examples of HTML </h2>
+        <p id ="boldExample"><code> &lt;p&gt; Some &lt;strong&gt; bold &lt;/strong&gt; text &lt;/p&gt; </code> </p>
+        Shows: <p> Some <strong> bold </strong> text </p>
+        <code> &lt;img src=&quot;/images/cat.jpg&quot;/&gt; </code>
+      </section>
+
+      <section>
+        <h2> Divs and Headers </h2>
+      </br>
+      <ul>
+        <li> Divs: Used to group elements into sections </li>
+        <li> Helps make applying CSS more organized </li>
+      </ul>
+      </section>
+
+      <section>
+        <h2> Lists </h2>
+        <p> Can be ordered or unordered </p>
+        <p> Both contain &lt;li&gt; elements </p>
+      </section>
+
+      <section class="list">
+        <h2> Unordered List Example </h2>
+        <img src="img/unorderedList.jpg"/> </br>
+        Looks like: </br> </br>
+        <ul> Favorite Places:
+          <li> Tokyo </li>
+          <li> New York </li>
+        </ul>
+      </section>
+
+      <section class="list">
+        <h2> Ordered List Example </h2>
+        <img src="img/orderedList.jpg"/> </br>
+        Looks Like: </br> </br>
+        <ol> Favorite TV Shows in Order:
+          <li> South Park </li>
+          <li> Family Guy </li>
+          <li> American Dad </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2> Images and Links </h2>
+        <ul> Images:
+          <li> Noted by the &lt;img&gt; tag </li>
+          <li> Need to include the source of the picture. </li>
+        </ul>
+      <p id="linkExample"> &lt;a href=&quot;http://www.google.com&quot;&gt; link
+        &lt;/a&gt; </p>
+      </section>
+
+      <section>
+        <h2> Links </h2>
+        <ul>
+          <li> Noted by the &lt;a&gt; &lt;/a&gt; tags </li>
+          <li> The HyperText Reference (Href) specifies the link! </li>
+        </ul>
+        Ex: <code> &lt;a href=&quot;http://www.google.com &quot; /&gt; </code>
+      </section>
+
+      <section>
+        <h2> Divs w/ Classes and IDs </h2>
+        <p> Divs: Sections of content in an HTML page </p>
+        <p> Can group elements together w/ IDs and Classes </p>
+        <p> Can use these IDs and Classes for CSS styling! </p>
+        <ul>
+          <li> Classes: Used for multiple groups of elements </br>
+           Multiple lists, but with the same font color. </li>
+           <li> IDs: Use for formatting a specific group </li>
+        </ul>
+      </section>
+
+<!--
+      <section>
+        <h2> A Useful Example </h2>
+        <img id="marginsPadding" src="img/clearMarginsPadding.jpg"/>
+        </section>
+      -->
+
+      <section>
+        <h2> What is CSS? </h2>
+        <ul> Cascading Style Sheets
+          <li> Allows you to modify HTML elements </li>
+          <li> Colors, Borders, Size, and Positioning </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2> Colors in CSS </h2>
+        <ul> You can change the colors of:
+          <li> Text: <code> color: red </code> </li>
+          <li> Background: <code> background-color: #000000; </code> </li>
+          <li> Useful Link: <a href="http://htmlcolorcodes.com/"> htmlcolorcodes.com </a> </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2> Borders </h2>
+        Edges around elements like images
+        </br>
+        Borders are determined by thickness (px), style and color
+        Ex: A solid black border</br>
+        <code> border: 1px solid black; </code> </br>
+        Ex: A dotted red border </br>
+        <code> border: 3px dotted #FF5733; </code>
+      </section>
+
+      <section>
+        <h2> Sizing Text in CSS </h2>
+        Done in units of em; relative unit to the font.
+        Better than using px., as that can vary on different screens
+        </br>
+        <code> font-size: 1.4em; </code>
+        You can make text, images, and other elements bigger/smaller
+      </br>
+      </section>
+
+      <section>
+        <h2> Margins and Padding </h2>
+        Margins: Transparent box that separates elements
+        Padding: Space b/w border and the element
+        <img id="boxModel" src="img/boxModel.png"/>
+      </section>
+
+      <section>
+        <code>
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        </code>
+        OR </br>
+        <code> padding: 10px 10px 10px 10px </code>
+        (top, right, bottom, left)
+      </section>
+
+      <section>
+        <code>
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        </code/
+        OR </br>
+        <code> margin: 10px 10px 10px 10px </code>
+        (top, right, bottom, left)
+      </section>
+
+      <section>
+        <h2> With This Knowledge </h2>
+        <h3> Let's Code!!! </h3>
+        https://github.com/Ryan-Gross1993/HTMLCSS-Slides
+      </section>
+
+      <section>
+        <h2> Next Steps </h2>
+          <ul>
+            <li> CodeAcademy: Lessons in HTML/CSS </li>
+            <li> W3Schools: Reference in HTML/CSS </li>
+          </ul>
+      </section>
+
+      <section>
+        <h2> A More Advanced Topic </h2>
+          Responsive Web Design (RWD) </br>
+          Idea of elements looking the same on different sized screens </br>
+          The Bootstrap Framework
+      </section>
+
+      <section>
+        <h2> Questions, Concerns </h2> </br>
+        <p> Email: rgross@udel.edu </p>
+        <p> Add me on LinkedIn: Ryan Gross </p>
+      </section>
+
+    </slides>
+  </div>
+</div>
+
+
+<script src="js/reveal.js"> </script>
+<script src="lib/js/html5shiv.js"> </script>
+  <script>
+  Reveal.initialize( {
+
+  });
+  </script>
+</body>
+</html>
