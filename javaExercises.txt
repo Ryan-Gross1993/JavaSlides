@@ -1,0 +1,10 @@
+1. Write a function that prints ‘Hello World’ to the screen.
+2. Write a function that takes in a name, and only response if the name is Alice or Bob.
+3. Write a function that asks for the length and width of a square/rectangle, and returns the area/parameter
+4. Write a function that lists the all the numbers that are multiples of either 3 or five
+5. Write a function that takes in a string and transforms it so every other letter is upper case. (ex: aPpLeS)
+6. The classic "FizzBuzz Problem"
+7. Write a function that takes in a string, and returns "true" if it contains all the letters of the alphabet
+8. Write a function that takes in a String and reverses it
+Challenge: Write a function that takes in a time, your timezone, and another timezone, and returns the time in the
+different timezone (Hours only!)
