@@ -99,8 +99,8 @@
       <section>
         <h2> Strings </h2>
         <div class="left-align">
-          <pre> <code> "Java".length() </code> - 4 </pre>
-          <pre> <code> "Delaware".length() </code> - 8 </pre>
+          <pre> <code> "Java".length() </code> // 4 </pre>
+          <pre> <code> "Delaware".length() </code> // 8 </pre>
           <p> Strings are sequences of Unicode characters, with each character
             represented by a unique numeric value that applies across platforms and programs. </p>
         </div>
@@ -112,10 +112,10 @@
           <code> "Ryan".split("") </code>
           <p> Splits the string into an array of Strings. </p>
           </br>
-          <code> "Wilmington".charAt(9) </code> - n
+          <code> "Wilmington".charAt(9) </code> // n
           <p> Grabs the character at the point in the String </p>
         </br>
-        <code> "whispering".toUpperCase() </code> - WHISPERING
+        <code> "whispering".toUpperCase() </code> // WHISPERING
         <p> Converts to caps; vice-versa with toLowerCase() </p>
         </div>
       </section>
@@ -137,7 +137,7 @@
         <h2> Some Operators </h2>
         <div class="left-align">
         <p> Concatenating Strings Together </p>
-        <pre> <code> "Hello" + "World" - "Hello World" </code> </pre>
+        <pre> <code> "Hello" + "World" // "Hello World" </code> </pre>
 
         <p> Incremental Adding/Subtracting </p>
         <pre> <code> counter++ </code> </pre>
@@ -169,7 +169,7 @@
       } else {
         System.out.println("Let's go to the beach!");
       }
-      - Result: "Let's go to the beach!"
+      // Result: "Let's go to the beach!"
         </code>
       </section>
 
@@ -227,36 +227,153 @@
       </section>
 
       <section>
+        <h2> Objects and Classes </h2>
+        <p> Objects have state and behavior </p>
+        <p> These states and behaviors are defined through the <em> class </em> </p>
+        <p> The class is the blueprint for the object it supports </p>
+        <p> Classes contain constructors, getters, and setters for the object </p>
       </section>
 
+      <section>
+        <h2> Creating an Object </h2>
+        <div class="left-align">
+        <ul>
+          <p> Declaring a variable with the object type </p>
+          <p> Instantiating the variable to create the object ("new" keyword) </p>
+          <p> Initializing the variable by calling the constructor. </p>
+        </div>
+      </section>
 
+      <section>
+        <code>
+          public class Library {
+            String libraryName;
+          }
+        </code>
+      </section>
 
+      <section>
+        <div class="left-align">
+          <code>
+            Libary bearLibrary = new Library("bearLibrary");
+          </code>
+        </div>
+      </section>
 
+      <section>
+        <h2> Constructors </h2>
+        <p> Special method that performs
+          set-up tasks for an instance of a class </p>
+        <p> Only called once in the life cycle of an instance </p>
+        <p> Named after the object class they belong to </p>
+        <p> Unique as they're functions with no return value or type
+      </section>
 
+      <section>
+        <div class="left-align">
+        <code>
+        public Library(String aName, Array[Book] aList) {
+          this.libraryName = aName;
+          this.bookList = aList;
+        }
+        </code>
+      </div>
+    </section>
 
+      <section>
+        <h2> Getters &mp; Setters </h2>
+        <p> Used to get or set fields in an instance of an object </p>
+        <p> Required to access fields that are set to private </p>
+      </section>
 
+      <section>
+        <div class="left-align">
+          <code>
+          public String getLibraryName() {
+            return this.libraryName;
+          }
+
+          public void setLibraryName(String name) {
+            this.libraryName = name;
+          }
+          </code>
+        </div>
+      </section>
+
+      <section>
+        <h2> Functions </h2>
+        <div class="left-align">
+        <p> How objects can talk to each other </p>
+        <p> Can take in parameters, but not required </p>
+        <p> Can return a value (object, String, number), but can be void </p>
+      </div>
+      </section>
+
+      <section>
+        <code>
+          public int addFive(int aNumber) {
+            return aNumber += 5;
+          }
+        </code>
+      </section>
+
+      <section>
+        <h2> Arrays </h2>
+        <p> A kind of collection of elements </p>
+        <p> Used to store a fixed set of elements </p>
+        <p> Stored by index (starts at 0) </p>
+      </section>
+
+      <section>
+        <code>
+        String[] cities = ["Tokyo", "NYC"];
+        cities[0] // "Tokyo"
+        cities[1] // "NYC"
+        </code>
+      </section>
+
+      <section>
+        <h2> HashMaps </h2>
+        <p> Another kind of collection of elements </p>
+        <p> Stores elements via key-pair values </p>
+        <p> All keys must be unique </p>
+        <p> Expandable/shrinkable </p>
+      </section>
+
+      <section>
+        <div class="left-align">
+        <code>
+          Map<String, String> citiesAndStates = new Hashmap&lt;&gt;();
+          citiesAndStates.put("Dover", "DE");
+          citiesAndStates.put("Ocean City", "MD");
+          citiesAndStates.get("Ocean City") // "MD"
+          String[] mapKeySet = citiesAndStates.keySet() // {"Dover", "Ocean City"}
+          String[] mapValueSet = citiesAndStates.valueSet() // {"MD", "MD"}
+        </code>
+      </div>
+      </section>
 
 
 
       <section>
         <h2> With This Knowledge </h2>
         <h3> Let's Code!!! </h3>
-        https://github.com/Ryan-Gross1993/HTMLCSS-Slides
+        https://github.com/Ryan-Gross1993/JavaSlides
       </section>
 
       <section>
         <h2> Next Steps </h2>
           <ul>
-            <li> CodeAcademy: Lessons in HTML/CSS </li>
-            <li> W3Schools: Reference in HTML/CSS </li>
+            <li> CodeAcademy: Lessons in Java </li>
+            <li> W3Schools: Reference in Java </li>
           </ul>
       </section>
 
       <section>
-        <h2> A More Advanced Topic </h2>
-          Responsive Web Design (RWD) </br>
-          Idea of elements looking the same on different sized screens </br>
-          The Bootstrap Framework
+        <h2> Continuing Topics</h2>
+        Inheritance and Polymorphism
+        Interfaces
+        Test Driven Development w/ JUnit
       </section>
 
       <section>
